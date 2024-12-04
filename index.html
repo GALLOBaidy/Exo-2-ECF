@@ -15,35 +15,59 @@
         <h1 class="col-12 row justify-content-center">Formulaire Bancaire</h1>
     </header>
     <main>
-        <form action="">
+        <section>
+            <div class="modal" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title row justify-content-center">Formulaire Bancaire</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Vos données sont valides, elles vont être transmises sur nos serveurs pour traitement.</p>
+                      <p>Nous sommes ravis de vous compter parmi nos nouveaux clients;</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </section>
+        <form action="" id="form">
             <div class="row pb-5">
                 <label class="col-4" for="">Nom</label>
-                <input class="col-4" type="text" id="name">
-                <p class="col-4">a</p>
+                <input class="col-4" type="text" id="name" placeholder="ABCDE">
+                <p id="paraName" class="col-4"></p>
             </div>
-            <div class="row pb-5">
+            <div class="row pb-5 pt-2">
                 <label class="col-4" for="">Prénom</label>
-                <input class="col-4" type="text" id="prenom">
-                <p class="col-4">b</p>
+                <input class="col-4" type="text" id="prenom" placeholder="Abcde">
+                <p id="paraPrenom" class="col-4"></p>
             </div>
-            <div class="row pb-5">
+            <div class="row pb-5 pt-2">
                 <label class="col-4" for="">Date de naissance</label>
-                <input class="col-4" type="text" name="" id="date">
-                <p class="col-4">c</p>
+                <input class="col-4" type="text" name="" id="date" placeholder="JJ/MM/AAAA">
+                <p id="paraDate" class="col-4"></p>
             </div>
-            <div class="row pb-5">
+            <div class="row pb-5 pt-2">
                 <label class="col-4" for="">Email</label>
                 <input class="col-4" type="email" name="" id="mail">
-                <p class="col-4">d</p>
+                <p id="paraMail" class="col-4"> </p>
             </div>
-            <div class="row pb-5">
+            <div class="row pb-5 pt-2">
                 <label class="col-4" for="">Code Confidentiel</label>
                 <input class="col-4" type="text" name="" id="code" placeholder="FR12345ABCx">
-                <p class="col-4">e</p>
+                <p id="paraCode" class="col-4"></p>
             </div>
-            <div class="row pb-5">
-                <input id="btnSend" type="submit" class="col-4" value="Envoyer">
-                <input id="btnReset" type="reset" class="col-4" value="Annuler">
+            <div class="row pb-5 pt-2">
+                <article class="col-4 row justify-content-center" >
+                    <input id="btnSend" type="submit" class="col-6" value="Envoyer">
+                </article>
+                <article class="col-4 row justify-content-center">
+                    <input id="btnReset" type="reset" class="col-6 " value="Annuler">
+                </article>
             </div>
         </form>
     </main>
