@@ -45,3 +45,7 @@ article input {
    background-color: green;
 }
 
+.modal-body p {
+    color: #000;
+}
+
