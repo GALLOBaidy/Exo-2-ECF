@@ -100,11 +100,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
 //Ajoutons un événement à l'envoi du formulaire
 form.addEventListener("submit", (event) => {
   event.preventDefault();
-});
+  
+  // btnSend.addEventListener("click", sendForm);
 
-btnSend.addEventListener("click", sendForm);
-
-function sendForm() {
+// function sendForm() {
   //Déclarons une variable qui nous permettra l'affichage de notre modal
   let isValid = true;
   //posons une première condition pour vérifier si le nom saisis correspond aux regex poser antérieurement
@@ -172,4 +171,9 @@ function sendForm() {
   if (isValid) {
     modal.show();
   }
-}
+// }
+
+  });
+
+  document.getElementById("btnFermer").addEventListener("click", function() { 
+    form.submit();})
